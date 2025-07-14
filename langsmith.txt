@@ -1,0 +1,22 @@
+1：注册langsmith
+	https://www.langchain.com/langsmith
+
+	并且把对应的key放到环境变量里：
+	echo 'export LANGCHAIN_API_KEY="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"' >> ~/.bashrc
+	source ~/.bashrc
+	环境变量设置后，一定要重启python 的虚拟环境，否则拿不到变量。
+
+2: 在jupyter 里面安装
+	%%capture --no-stderr
+	# 安装 LangGraph 和 LangSmith，用于状态图和跟踪
+	%pip install -U langgraph langsmith
+
+3：# 开启 LangSmith 跟踪，便于调试和查看详细执行信息
+	os.environ["LANGCHAIN_TRACING_V2"] = "true"
+	os.environ["LANGCHAIN_PROJECT"] = "ChatBot"
+	
+4： 在langsmith 官网追踪。
+https://smith.langchain.com/o/1bec1675-9f99-47b0-89cc-e251c7f8898e/projects/p/6c8cb379-923a-484c-88c5-a9edb520e91b?timeModel=%7B%22duration%22%3A%227d%22%7D&peek=884d7a9d-3d50-4b6f-b33e-3cc8422adfa7&peeked_trace=884d7a9d-3d50-4b6f-b33e-3cc8422adfa7
+
+
+
