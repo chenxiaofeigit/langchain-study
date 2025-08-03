@@ -1,0 +1,4 @@
+OPENAI_API_KEY	调用 OpenAI 模型	OpenAI
+DEEPSEEK_API_KEY	调用 DeepSeek 模型	DeepSeek
+ANTHROPIC_API_KEY	调用 Claude 模型	Anthropic
+LANGCHAIN_API_KEY	使用 LangSmith 服务	LangChain
