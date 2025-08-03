@@ -1,0 +1,165 @@
+2025-08-02 21:53:48 - FlowerRAG - INFO - 初始化 FlowerRAG 系统开始
+2025-08-02 21:53:48 - FlowerRAG - DEBUG - 参数: data_dir=./OneFlower, vector_store_path=./vector_store, collection_name=flower_knowledge
+2025-08-02 21:53:48 - FlowerRAG - INFO - 设置 HF_HOME 环境变量: /home/fiona/data/hf_cache
+2025-08-02 21:53:48 - FlowerRAG - INFO - 开始构建 RAG 管道
+2025-08-02 21:53:48 - FlowerRAG - INFO - 开始加载文档，目录: ./OneFlower
+2025-08-02 21:53:48 - FlowerRAG - DEBUG - 成功加载 PDF 文件: 易速鲜花员工手册-1.pdf, 文档数: 32
+2025-08-02 21:53:48 - FlowerRAG - WARNING - 跳过不支持的文件类型: .ipynb_checkpoints
+2025-08-02 21:53:48 - FlowerRAG - DEBUG - 成功加载 TXT 文件: 花语大全(1).txt, 文档数: 1
+2025-08-02 21:53:48 - FlowerRAG - DEBUG - 成功加载 DOCX 文件: 易速鲜花运营指南(1).docx, 文档数: 1
+2025-08-02 21:53:48 - FlowerRAG - INFO - 成功加载 3 个文件，共 34 个文档片段
+2025-08-02 21:53:48 - FlowerRAG - DEBUG - 加载的文件列表: 易速鲜花员工手册-1.pdf, 花语大全(1).txt, 易速鲜花运营指南(1).docx
+2025-08-02 21:53:48 - FlowerRAG - INFO - 开始分割文档
+2025-08-02 21:53:48 - FlowerRAG - DEBUG - 分割参数: chunk_size=300, chunk_overlap=20
+2025-08-02 21:53:48 - FlowerRAG - INFO - 文档分割完成，生成 80 个文本块
+2025-08-02 21:53:48 - FlowerRAG - DEBUG - 文本块 #1 (长度: 65): 易速鲜花集团 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+易速鲜花服务中心 
+易速鲜花股份有限公司 
+易
+速
+鲜
+花
+员
+工
+手
+册...
+2025-08-02 21:53:48 - FlowerRAG - DEBUG - 文本块 #2 (长度: 281): 易速鲜花集团 
+ 1 
+董事长致辞 
+亲爱的同事： 
+您好！欢迎您加入易速鲜花旅游文化股份有限公司! 
+我代表易速鲜花对您的到来表示热烈的欢迎！并为公司拥有您
+这样优秀的员工而感到自豪和骄傲。易速鲜花...
+2025-08-02 21:53:48 - FlowerRAG - DEBUG - 文本块 #3 (长度: 191): 纳，取长补短，共同奋进，同舟共济。这样，我们就可以成为一个
+坚强的战斗堡垒， 在创易速鲜花发展的道路上披荆斩棘， 乘风破浪，
+无往不胜，所向披靡。最终以一流的服务、一流的管理、一流的信
+誉让我们的易速...
+2025-08-02 21:53:48 - FlowerRAG - DEBUG - 文本块 #4 (长度: 172): 易速鲜花集团 
+ 2 
+易速鲜花晨会宣言 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+今天 
+我开始新的生活 
+我要用全身心的爱迎接今天 
+我会用我全部的热情 
+关爱我的...
+2025-08-02 21:53:48 - FlowerRAG - DEBUG - 文本块 #5 (长度: 288): 易速鲜花集团 
+ 3 
+ 
+易速鲜花简介 
+易速鲜花，一个超越一切鲜花运营商的全新概念，土地犹如一片
+绿色的画布，展示着生机勃勃的花海。我们在这里嫁接了乐、吃、住、
+行、游等元素，打造出一个独特的，富...
+2025-08-02 21:53:48 - FlowerRAG - INFO - 开始创建/加载向量存储，路径: ./vector_store
+2025-08-02 21:53:48 - FlowerRAG - DEBUG - 初始化嵌入模型: BAAI/bge-m3 (使用缓存: /home/fiona/data/hf_cache)
+2025-08-02 21:54:19 - FlowerRAG - INFO - 创建新向量库: ./vector_store/flower_knowledge, 原因: Collection flower_knowledge not found
+2025-08-02 21:54:19 - FlowerRAG - DEBUG - 创建 Qdrant 向量存储
+2025-08-02 21:54:19 - FlowerRAG - ERROR - FlowerRAG 系统初始化失败
+Traceback (most recent call last):
+  File "/home/fiona/miniconda3/envs/deepseek/lib/python3.13/site-packages/portalocker/portalocker.py", line 118, in lock
+    LOCKER(file_, flags)
+    ~~~~~~^^^^^^^^^^^^^^
+BlockingIOError: [Errno 11] Resource temporarily unavailable
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/fiona/miniconda3/envs/deepseek/lib/python3.13/site-packages/qdrant_client/local/qdrant_local.py", line 133, in _load
+    portalocker.lock(
+    ~~~~~~~~~~~~~~~~^
+        self._flock_file,
+        ^^^^^^^^^^^^^^^^^
+        portalocker.LockFlags.EXCLUSIVE | portalocker.LockFlags.NON_BLOCKING,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/fiona/miniconda3/envs/deepseek/lib/python3.13/site-packages/portalocker/portalocker.py", line 131, in lock
+    raise exceptions.AlreadyLocked(
+    ...<2 lines>...
+    ) from exc_value
+portalocker.exceptions.AlreadyLocked: [Errno 11] Resource temporarily unavailable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/fiona/projects/langchain-study/flower_rag_app/flower_rag.py", line 102, in __init__
+    self._build_rag_pipeline()
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/fiona/projects/langchain-study/flower_rag_app/flower_rag.py", line 278, in _build_rag_pipeline
+    self.vectorstore = self._create_vector_store(self.splits)
+                       ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/home/fiona/projects/langchain-study/flower_rag_app/flower_rag.py", line 220, in _create_vector_store
+    vectorstore = Qdrant.from_documents(
+        documents=splits,
+    ...<2 lines>...
+        collection_name=self.collection_name,
+    )
+  File "/home/fiona/miniconda3/envs/deepseek/lib/python3.13/site-packages/langchain_core/vectorstores/base.py", line 848, in from_documents
+    return cls.from_texts(texts, embedding, metadatas=metadatas, **kwargs)
+           ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/fiona/miniconda3/envs/deepseek/lib/python3.13/site-packages/langchain_community/vectorstores/qdrant.py", line 1337, in from_texts
+    qdrant = cls.construct_instance(
+        texts,
+    ...<28 lines>...
+        **kwargs,
+    )
+  File "/home/fiona/miniconda3/envs/deepseek/lib/python3.13/site-packages/langchain_community/vectorstores/qdrant.py", line 1643, in construct_instance
+    client, async_client = cls._generate_clients(
+                           ~~~~~~~~~~~~~~~~~~~~~^
+        location=location,
+        ^^^^^^^^^^^^^^^^^^
+    ...<10 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    )
+    ^
+  File "/home/fiona/miniconda3/envs/deepseek/lib/python3.13/site-packages/langchain_community/vectorstores/qdrant.py", line 2244, in _generate_clients
+    sync_client = QdrantClient(
+        location=location,
+    ...<10 lines>...
+        **kwargs,
+    )
+  File "/home/fiona/miniconda3/envs/deepseek/lib/python3.13/site-packages/qdrant_client/qdrant_client.py", line 132, in __init__
+    self._client = QdrantLocal(
+                   ~~~~~~~~~~~^
+        location=path,
+        ^^^^^^^^^^^^^^
+        force_disable_check_same_thread=force_disable_check_same_thread,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/fiona/miniconda3/envs/deepseek/lib/python3.13/site-packages/qdrant_client/local/qdrant_local.py", line 66, in __init__
+    self._load()
+    ~~~~~~~~~~^^
+  File "/home/fiona/miniconda3/envs/deepseek/lib/python3.13/site-packages/qdrant_client/local/qdrant_local.py", line 138, in _load
+    raise RuntimeError(
+    ...<2 lines>...
+    )
+RuntimeError: Storage folder ./vector_store is already accessed by another instance of Qdrant client. If you require concurrent access, use Qdrant server instead.

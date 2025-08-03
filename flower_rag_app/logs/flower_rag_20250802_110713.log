@@ -1,0 +1,392 @@
+2025-08-02 11:07:34 - FlowerRAG - INFO - 初始化 FlowerRAG 系统开始
+2025-08-02 11:07:34 - FlowerRAG - DEBUG - 参数: data_dir=./OneFlower, chunk_size=200, chunk_overlap=10, search_k=3, hf_home=/home/fiona/data/hf_cache
+2025-08-02 11:07:34 - FlowerRAG - INFO - 设置 HF_HOME 环境变量: /home/fiona/data/hf_cache
+2025-08-02 11:07:34 - FlowerRAG - INFO - 开始构建 RAG 管道
+2025-08-02 11:07:34 - FlowerRAG - INFO - 开始加载文档，目录: ./OneFlower
+2025-08-02 11:07:35 - FlowerRAG - DEBUG - 成功加载 PDF 文件: 易速鲜花员工手册-1.pdf, 文档数: 32
+2025-08-02 11:07:35 - FlowerRAG - WARNING - 跳过不支持的文件类型: .ipynb_checkpoints
+2025-08-02 11:07:35 - FlowerRAG - DEBUG - 成功加载 TXT 文件: 花语大全(1).txt, 文档数: 1
+2025-08-02 11:07:35 - FlowerRAG - DEBUG - 成功加载 DOCX 文件: 易速鲜花运营指南(1).docx, 文档数: 1
+2025-08-02 11:07:35 - FlowerRAG - INFO - 成功加载 3 个文件，共 34 个文档片段
+2025-08-02 11:07:35 - FlowerRAG - DEBUG - 加载的文件列表: 易速鲜花员工手册-1.pdf, 花语大全(1).txt, 易速鲜花运营指南(1).docx
+2025-08-02 11:07:35 - FlowerRAG - INFO - 开始分割文档
+2025-08-02 11:07:35 - FlowerRAG - DEBUG - 分割参数: chunk_size=200, chunk_overlap=10
+2025-08-02 11:07:35 - FlowerRAG - INFO - 文档分割完成，生成 112 个文本块
+2025-08-02 11:07:35 - FlowerRAG - DEBUG - 文本块 #1 (长度: 65): 易速鲜花集团 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+易速鲜花服务中心 
+易速鲜花股份有限公司 
+易
+速
+鲜
+花
+员
+工
+手
+册...
+2025-08-02 11:07:35 - FlowerRAG - DEBUG - 文本块 #2 (长度: 190): 易速鲜花集团 
+ 1 
+董事长致辞 
+亲爱的同事： 
+您好！欢迎您加入易速鲜花旅游文化股份有限公司! 
+我代表易速鲜花对您的到来表示热烈的欢迎！并为公司拥有您
+这样优秀的员工而感到自豪和骄傲。易速鲜花...
+2025-08-02 11:07:35 - FlowerRAG - DEBUG - 文本块 #3 (长度: 183): 结向上，完美无缺”的企业精神，以高度的主人翁责任感、使命感，
+与易速鲜花同呼吸、共命运，在各自的岗位上，勤奋敬业，尽职尽
+责，奋力拼搏。作为大家庭的一员，同仁之间应默契配合，相互接
+纳，取长补短，共同...
+2025-08-02 11:07:35 - FlowerRAG - DEBUG - 文本块 #4 (长度: 98): 誉让我们的易速鲜花成为全国的一颗明珠。 
+希望各位以本手册为指南，共创易速鲜花美好明天! 
+最后，诚挚地祝愿大家在公司工作愉快，前程似锦! 
+ 
+ 
+                    签名：...
+2025-08-02 11:07:35 - FlowerRAG - DEBUG - 文本块 #5 (长度: 172): 易速鲜花集团 
+ 2 
+易速鲜花晨会宣言 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+今天 
+我开始新的生活 
+我要用全身心的爱迎接今天 
+我会用我全部的热情 
+关爱我的...
+2025-08-02 11:07:35 - FlowerRAG - INFO - 开始创建向量存储
+2025-08-02 11:07:35 - FlowerRAG - DEBUG - 初始化嵌入模型: BAAI/bge-m3 (使用缓存: /home/fiona/data/hf_cache)
+2025-08-02 11:07:53 - FlowerRAG - ERROR - 创建向量存储失败
+Traceback (most recent call last):
+  File "/home/fiona/miniconda3/envs/deepseek/lib/python3.13/site-packages/urllib3/connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/home/fiona/miniconda3/envs/deepseek/lib/python3.13/site-packages/urllib3/connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+    ~~~~~~~~~~~~^^
+  File "/home/fiona/miniconda3/envs/deepseek/lib/python3.13/site-packages/urllib3/connection.py", line 790, in connect
+    sock_and_verified = _ssl_wrap_socket_and_match_hostname(
+        sock=sock,
+    ...<14 lines>...
+        assert_fingerprint=self.assert_fingerprint,
+    )
+  File "/home/fiona/miniconda3/envs/deepseek/lib/python3.13/site-packages/urllib3/connection.py", line 969, in _ssl_wrap_socket_and_match_hostname
+    ssl_sock = ssl_wrap_socket(
+        sock=sock,
+    ...<8 lines>...
+        tls_in_tls=tls_in_tls,
+    )
+  File "/home/fiona/miniconda3/envs/deepseek/lib/python3.13/site-packages/urllib3/util/ssl_.py", line 480, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(sock, context, tls_in_tls, server_hostname)
+  File "/home/fiona/miniconda3/envs/deepseek/lib/python3.13/site-packages/urllib3/util/ssl_.py", line 524, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/fiona/miniconda3/envs/deepseek/lib/python3.13/ssl.py", line 455, in wrap_socket
+    return self.sslsocket_class._create(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sock=sock,
+        ^^^^^^^^^^
+    ...<5 lines>...
+        session=session
+        ^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/fiona/miniconda3/envs/deepseek/lib/python3.13/ssl.py", line 1076, in _create
+    self.do_handshake()
+    ~~~~~~~~~~~~~~~~~^^
+  File "/home/fiona/miniconda3/envs/deepseek/lib/python3.13/ssl.py", line 1372, in do_handshake
+    self._sslobj.do_handshake()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+ssl.SSLEOFError: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1028)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/fiona/miniconda3/envs/deepseek/lib/python3.13/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "/home/fiona/miniconda3/envs/deepseek/lib/python3.13/site-packages/urllib3/connectionpool.py", line 488, in _make_request
+    raise new_e
+urllib3.exceptions.SSLError: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1028)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/fiona/miniconda3/envs/deepseek/lib/python3.13/site-packages/requests/adapters.py", line 667, in send
+    resp = conn.urlopen(
+        method=request.method,
+    ...<9 lines>...
+        chunked=chunked,
+    )
+  File "/home/fiona/miniconda3/envs/deepseek/lib/python3.13/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "/home/fiona/miniconda3/envs/deepseek/lib/python3.13/site-packages/urllib3/util/retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='hf-mirror.com', port=443): Max retries exceeded with url: /BAAI/bge-m3/resolve/main/model.safetensors (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1028)')))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/fiona/projects/langchain-study/flower_rag_app/flower_rag.py", line 192, in _create_vector_store
+    embeddings = HuggingFaceEmbeddings(
+        model_name="BAAI/bge-m3",  # 推荐的中文模型
+        model_kwargs={"device": "cpu"},
+        encode_kwargs={"normalize_embeddings": True}
+    )
+  File "/home/fiona/miniconda3/envs/deepseek/lib/python3.13/site-packages/langchain_huggingface/embeddings/huggingface.py", line 94, in __init__
+    self._client = model_cls(
+                   ~~~~~~~~~^
+        self.model_name, cache_folder=self.cache_folder, **self.model_kwargs
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/fiona/miniconda3/envs/deepseek/lib/python3.13/site-packages/sentence_transformers/SentenceTransformer.py", line 309, in __init__
+    modules, self.module_kwargs = self._load_sbert_model(
+                                  ~~~~~~~~~~~~~~~~~~~~~~^
+        model_name_or_path,
+        ^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+        config_kwargs=config_kwargs,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/fiona/miniconda3/envs/deepseek/lib/python3.13/site-packages/sentence_transformers/SentenceTransformer.py", line 1808, in _load_sbert_model
+    module = module_class(model_name_or_path, cache_dir=cache_folder, backend=self.backend, **kwargs)
+  File "/home/fiona/miniconda3/envs/deepseek/lib/python3.13/site-packages/sentence_transformers/models/Transformer.py", line 81, in __init__
+    self._load_model(model_name_or_path, config, cache_dir, backend, is_peft_model, **model_args)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/fiona/miniconda3/envs/deepseek/lib/python3.13/site-packages/sentence_transformers/models/Transformer.py", line 181, in _load_model
+    self.auto_model = AutoModel.from_pretrained(
+                      ~~~~~~~~~~~~~~~~~~~~~~~~~^
+        model_name_or_path, config=config, cache_dir=cache_dir, **model_args
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/fiona/miniconda3/envs/deepseek/lib/python3.13/site-packages/transformers/models/auto/auto_factory.py", line 571, in from_pretrained
+    return model_class.from_pretrained(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        pretrained_model_name_or_path, *model_args, config=config, **hub_kwargs, **kwargs
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/fiona/miniconda3/envs/deepseek/lib/python3.13/site-packages/transformers/modeling_utils.py", line 309, in _wrapper
+    return func(*args, **kwargs)
+  File "/home/fiona/miniconda3/envs/deepseek/lib/python3.13/site-packages/transformers/modeling_utils.py", line 4422, in from_pretrained
+    checkpoint_files, sharded_metadata = _get_resolved_checkpoint_files(
+                                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        pretrained_model_name_or_path=pretrained_model_name_or_path,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<14 lines>...
+        transformers_explicit_filename=transformers_explicit_filename,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/fiona/miniconda3/envs/deepseek/lib/python3.13/site-packages/transformers/modeling_utils.py", line 1089, in _get_resolved_checkpoint_files
+    if not has_file(pretrained_model_name_or_path, safe_weights_name, **has_file_kwargs):
+           ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/fiona/miniconda3/envs/deepseek/lib/python3.13/site-packages/transformers/utils/hub.py", line 670, in has_file
+    response = get_session().head(
+        hf_hub_url(path_or_repo, filename=filename, revision=revision, repo_type=repo_type),
+    ...<3 lines>...
+        timeout=10,
+    )
+  File "/home/fiona/miniconda3/envs/deepseek/lib/python3.13/site-packages/requests/sessions.py", line 624, in head
+    return self.request("HEAD", url, **kwargs)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/fiona/miniconda3/envs/deepseek/lib/python3.13/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/fiona/miniconda3/envs/deepseek/lib/python3.13/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/fiona/miniconda3/envs/deepseek/lib/python3.13/site-packages/huggingface_hub/utils/_http.py", line 96, in send
+    return super().send(request, *args, **kwargs)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/fiona/miniconda3/envs/deepseek/lib/python3.13/site-packages/requests/adapters.py", line 698, in send
+    raise SSLError(e, request=request)
+requests.exceptions.SSLError: (MaxRetryError("HTTPSConnectionPool(host='hf-mirror.com', port=443): Max retries exceeded with url: /BAAI/bge-m3/resolve/main/model.safetensors (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1028)')))"), '(Request ID: e789e025-28fe-4782-8e9b-9e4d401f09e8)')
+2025-08-02 11:07:53 - FlowerRAG - ERROR - FlowerRAG 系统初始化失败
+Traceback (most recent call last):
+  File "/home/fiona/miniconda3/envs/deepseek/lib/python3.13/site-packages/urllib3/connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/home/fiona/miniconda3/envs/deepseek/lib/python3.13/site-packages/urllib3/connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+    ~~~~~~~~~~~~^^
+  File "/home/fiona/miniconda3/envs/deepseek/lib/python3.13/site-packages/urllib3/connection.py", line 790, in connect
+    sock_and_verified = _ssl_wrap_socket_and_match_hostname(
+        sock=sock,
+    ...<14 lines>...
+        assert_fingerprint=self.assert_fingerprint,
+    )
+  File "/home/fiona/miniconda3/envs/deepseek/lib/python3.13/site-packages/urllib3/connection.py", line 969, in _ssl_wrap_socket_and_match_hostname
+    ssl_sock = ssl_wrap_socket(
+        sock=sock,
+    ...<8 lines>...
+        tls_in_tls=tls_in_tls,
+    )
+  File "/home/fiona/miniconda3/envs/deepseek/lib/python3.13/site-packages/urllib3/util/ssl_.py", line 480, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(sock, context, tls_in_tls, server_hostname)
+  File "/home/fiona/miniconda3/envs/deepseek/lib/python3.13/site-packages/urllib3/util/ssl_.py", line 524, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/fiona/miniconda3/envs/deepseek/lib/python3.13/ssl.py", line 455, in wrap_socket
+    return self.sslsocket_class._create(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sock=sock,
+        ^^^^^^^^^^
+    ...<5 lines>...
+        session=session
+        ^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/fiona/miniconda3/envs/deepseek/lib/python3.13/ssl.py", line 1076, in _create
+    self.do_handshake()
+    ~~~~~~~~~~~~~~~~~^^
+  File "/home/fiona/miniconda3/envs/deepseek/lib/python3.13/ssl.py", line 1372, in do_handshake
+    self._sslobj.do_handshake()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+ssl.SSLEOFError: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1028)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/fiona/miniconda3/envs/deepseek/lib/python3.13/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "/home/fiona/miniconda3/envs/deepseek/lib/python3.13/site-packages/urllib3/connectionpool.py", line 488, in _make_request
+    raise new_e
+urllib3.exceptions.SSLError: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1028)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/fiona/miniconda3/envs/deepseek/lib/python3.13/site-packages/requests/adapters.py", line 667, in send
+    resp = conn.urlopen(
+        method=request.method,
+    ...<9 lines>...
+        chunked=chunked,
+    )
+  File "/home/fiona/miniconda3/envs/deepseek/lib/python3.13/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "/home/fiona/miniconda3/envs/deepseek/lib/python3.13/site-packages/urllib3/util/retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='hf-mirror.com', port=443): Max retries exceeded with url: /BAAI/bge-m3/resolve/main/model.safetensors (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1028)')))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/fiona/projects/langchain-study/flower_rag_app/flower_rag.py", line 100, in __init__
+    self._build_rag_pipeline()
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/fiona/projects/langchain-study/flower_rag_app/flower_rag.py", line 261, in _build_rag_pipeline
+    self.vectorstore = self._create_vector_store(self.splits)
+                       ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/home/fiona/projects/langchain-study/flower_rag_app/flower_rag.py", line 192, in _create_vector_store
+    embeddings = HuggingFaceEmbeddings(
+        model_name="BAAI/bge-m3",  # 推荐的中文模型
+        model_kwargs={"device": "cpu"},
+        encode_kwargs={"normalize_embeddings": True}
+    )
+  File "/home/fiona/miniconda3/envs/deepseek/lib/python3.13/site-packages/langchain_huggingface/embeddings/huggingface.py", line 94, in __init__
+    self._client = model_cls(
+                   ~~~~~~~~~^
+        self.model_name, cache_folder=self.cache_folder, **self.model_kwargs
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/fiona/miniconda3/envs/deepseek/lib/python3.13/site-packages/sentence_transformers/SentenceTransformer.py", line 309, in __init__
+    modules, self.module_kwargs = self._load_sbert_model(
+                                  ~~~~~~~~~~~~~~~~~~~~~~^
+        model_name_or_path,
+        ^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+        config_kwargs=config_kwargs,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/fiona/miniconda3/envs/deepseek/lib/python3.13/site-packages/sentence_transformers/SentenceTransformer.py", line 1808, in _load_sbert_model
+    module = module_class(model_name_or_path, cache_dir=cache_folder, backend=self.backend, **kwargs)
+  File "/home/fiona/miniconda3/envs/deepseek/lib/python3.13/site-packages/sentence_transformers/models/Transformer.py", line 81, in __init__
+    self._load_model(model_name_or_path, config, cache_dir, backend, is_peft_model, **model_args)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/fiona/miniconda3/envs/deepseek/lib/python3.13/site-packages/sentence_transformers/models/Transformer.py", line 181, in _load_model
+    self.auto_model = AutoModel.from_pretrained(
+                      ~~~~~~~~~~~~~~~~~~~~~~~~~^
+        model_name_or_path, config=config, cache_dir=cache_dir, **model_args
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/fiona/miniconda3/envs/deepseek/lib/python3.13/site-packages/transformers/models/auto/auto_factory.py", line 571, in from_pretrained
+    return model_class.from_pretrained(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        pretrained_model_name_or_path, *model_args, config=config, **hub_kwargs, **kwargs
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/fiona/miniconda3/envs/deepseek/lib/python3.13/site-packages/transformers/modeling_utils.py", line 309, in _wrapper
+    return func(*args, **kwargs)
+  File "/home/fiona/miniconda3/envs/deepseek/lib/python3.13/site-packages/transformers/modeling_utils.py", line 4422, in from_pretrained
+    checkpoint_files, sharded_metadata = _get_resolved_checkpoint_files(
+                                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        pretrained_model_name_or_path=pretrained_model_name_or_path,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<14 lines>...
+        transformers_explicit_filename=transformers_explicit_filename,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/fiona/miniconda3/envs/deepseek/lib/python3.13/site-packages/transformers/modeling_utils.py", line 1089, in _get_resolved_checkpoint_files
+    if not has_file(pretrained_model_name_or_path, safe_weights_name, **has_file_kwargs):
+           ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/fiona/miniconda3/envs/deepseek/lib/python3.13/site-packages/transformers/utils/hub.py", line 670, in has_file
+    response = get_session().head(
+        hf_hub_url(path_or_repo, filename=filename, revision=revision, repo_type=repo_type),
+    ...<3 lines>...
+        timeout=10,
+    )
+  File "/home/fiona/miniconda3/envs/deepseek/lib/python3.13/site-packages/requests/sessions.py", line 624, in head
+    return self.request("HEAD", url, **kwargs)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/fiona/miniconda3/envs/deepseek/lib/python3.13/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/fiona/miniconda3/envs/deepseek/lib/python3.13/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/fiona/miniconda3/envs/deepseek/lib/python3.13/site-packages/huggingface_hub/utils/_http.py", line 96, in send
+    return super().send(request, *args, **kwargs)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/fiona/miniconda3/envs/deepseek/lib/python3.13/site-packages/requests/adapters.py", line 698, in send
+    raise SSLError(e, request=request)
+requests.exceptions.SSLError: (MaxRetryError("HTTPSConnectionPool(host='hf-mirror.com', port=443): Max retries exceeded with url: /BAAI/bge-m3/resolve/main/model.safetensors (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1028)')))"), '(Request ID: e789e025-28fe-4782-8e9b-9e4d401f09e8)')

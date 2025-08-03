@@ -1,0 +1,226 @@
+2025-08-02 09:40:48 - FlowerRAG - INFO - 初始化 FlowerRAG 系统开始
+2025-08-02 09:40:48 - FlowerRAG - DEBUG - 参数: data_dir=./OneFlower, chunk_size=300, chunk_overlap=20, search_k=3, hf_home=/home/fiona/data/hf_cache
+2025-08-02 09:40:48 - FlowerRAG - INFO - 设置 HF_HOME 环境变量: /home/fiona/data/hf_cache
+2025-08-02 09:40:48 - FlowerRAG - INFO - 开始构建 RAG 管道
+2025-08-02 09:40:48 - FlowerRAG - INFO - 开始加载文档，目录: ./OneFlower
+2025-08-02 09:40:49 - FlowerRAG - DEBUG - 成功加载 PDF 文件: 易速鲜花员工手册-1.pdf, 文档数: 32
+2025-08-02 09:40:49 - FlowerRAG - DEBUG - 成功加载 TXT 文件: 花语大全(1).txt, 文档数: 1
+2025-08-02 09:40:49 - FlowerRAG - DEBUG - 成功加载 DOCX 文件: 易速鲜花运营指南(1).docx, 文档数: 1
+2025-08-02 09:40:49 - FlowerRAG - INFO - 成功加载 3 个文件，共 34 个文档片段
+2025-08-02 09:40:49 - FlowerRAG - DEBUG - 加载的文件列表: 易速鲜花员工手册-1.pdf, 花语大全(1).txt, 易速鲜花运营指南(1).docx
+2025-08-02 09:40:49 - FlowerRAG - INFO - 开始分割文档
+2025-08-02 09:40:49 - FlowerRAG - DEBUG - 分割参数: chunk_size=300, chunk_overlap=20
+2025-08-02 09:40:49 - FlowerRAG - INFO - 文档分割完成，生成 80 个文本块
+2025-08-02 09:40:49 - FlowerRAG - DEBUG - 文本块 #1 (长度: 65): 易速鲜花集团 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+易速鲜花服务中心 
+易速鲜花股份有限公司 
+易
+速
+鲜
+花
+员
+工
+手
+册...
+2025-08-02 09:40:49 - FlowerRAG - DEBUG - 文本块 #2 (长度: 281): 易速鲜花集团 
+ 1 
+董事长致辞 
+亲爱的同事： 
+您好！欢迎您加入易速鲜花旅游文化股份有限公司! 
+我代表易速鲜花对您的到来表示热烈的欢迎！并为公司拥有您
+这样优秀的员工而感到自豪和骄傲。易速鲜花...
+2025-08-02 09:40:49 - FlowerRAG - DEBUG - 文本块 #3 (长度: 191): 纳，取长补短，共同奋进，同舟共济。这样，我们就可以成为一个
+坚强的战斗堡垒， 在创易速鲜花发展的道路上披荆斩棘， 乘风破浪，
+无往不胜，所向披靡。最终以一流的服务、一流的管理、一流的信
+誉让我们的易速...
+2025-08-02 09:40:49 - FlowerRAG - DEBUG - 文本块 #4 (长度: 172): 易速鲜花集团 
+ 2 
+易速鲜花晨会宣言 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+今天 
+我开始新的生活 
+我要用全身心的爱迎接今天 
+我会用我全部的热情 
+关爱我的...
+2025-08-02 09:40:49 - FlowerRAG - DEBUG - 文本块 #5 (长度: 288): 易速鲜花集团 
+ 3 
+ 
+易速鲜花简介 
+易速鲜花，一个超越一切鲜花运营商的全新概念，土地犹如一片
+绿色的画布，展示着生机勃勃的花海。我们在这里嫁接了乐、吃、住、
+行、游等元素，打造出一个独特的，富...
+2025-08-02 09:40:49 - FlowerRAG - INFO - 开始创建向量存储
+2025-08-02 09:40:49 - FlowerRAG - DEBUG - 初始化嵌入模型: BAAI/bge-m3 (使用缓存: /home/fiona/data/hf_cache)
+2025-08-02 09:41:27 - FlowerRAG - DEBUG - 创建 Qdrant 向量存储
+2025-08-02 09:42:42 - FlowerRAG - INFO - 向量存储创建成功
+2025-08-02 09:42:42 - FlowerRAG - INFO - 开始构建问答链
+2025-08-02 09:42:42 - FlowerRAG - DEBUG - 初始化 DeepSeek 聊天模型
+2025-08-02 09:42:43 - FlowerRAG - DEBUG - 创建检索器，k=3
+2025-08-02 09:42:43 - FlowerRAG - INFO - 问答链构建成功
+2025-08-02 09:42:43 - FlowerRAG - INFO - RAG 管道构建完成，耗时 114.73 秒
+2025-08-02 09:42:43 - FlowerRAG - INFO - FlowerRAG 系统初始化成功
+2025-08-02 09:42:43 - FlowerRAG - DEBUG - 获取文档数量: 34
+2025-08-02 09:42:43 - FlowerRAG - DEBUG - 获取文本块数量: 80
+2025-08-02 09:42:43 - FlowerRAG - INFO - 收到问题: '玫瑰花有哪些常见品种？'
+2025-08-02 09:42:43 - FlowerRAG - DEBUG - 开始处理问题...
+2025-08-02 09:42:50 - FlowerRAG - INFO - 问题处理完成，耗时 7.22 秒
+2025-08-02 09:42:50 - FlowerRAG - DEBUG - 完整响应: content='根据提供的上下文信息，花语大全中仅包含玫瑰（Rose）的花语为“Love, Passion, Beauty”，但未提及具体品种信息。作为客服助手，我暂时无法回答关于玫瑰花品种的问题，建议您咨询我们的鲜花顾问或提供更多相关文档以便查询。  \n\n（注：若需扩展品种信息，建议补充如“红玫瑰/白玫瑰/香槟玫瑰”等常见品种的对应资料）' additional_kwargs={'refusal': None} response_metadata={'token_usage': {'completion_tokens': 90, 'prompt_tokens': 453, 'total_tokens': 543, 'completion_tokens_details': None, 'prompt_tokens_details': {'audio_tokens': None, 'cached_tokens': 0}, 'prompt_cache_hit_tokens': 0, 'prompt_cache_miss_tokens': 453}, 'model_name': 'deepseek-chat', 'system_fingerprint': 'fp_8802369eaa_prod0623_fp8_kvcache', 'id': '468b86cc-75ad-4a1f-85a3-74946e639eb3', 'service_tier': None, 'finish_reason': 'stop', 'logprobs': None} id='run--58f9fff7-5bca-44dd-a9c5-47599105a5d3-0' usage_metadata={'input_tokens': 453, 'output_tokens': 90, 'total_tokens': 543, 'input_token_details': {'cache_read': 0}, 'output_token_details': {}}
+2025-08-02 09:42:50 - FlowerRAG - DEBUG - 响应内容: 根据提供的上下文信息，花语大全中仅包含玫瑰（Rose）的花语为“Love, Passion, Beauty”，但未提及具体品种信息。作为客服助手，我暂时无法回答关于玫瑰花品种的问题，建议您咨询我们的鲜花顾问或提供更多相关文档以便查询。  
+
+（注：若需扩展品种信息，建议补充如“红玫瑰/白玫瑰/香槟玫瑰”等常见品种的对应资料）
+2025-08-02 09:42:50 - FlowerRAG - INFO - 收到问题: '如何养护兰花？'
+2025-08-02 09:42:50 - FlowerRAG - DEBUG - 开始处理问题...
+2025-08-02 09:42:56 - FlowerRAG - INFO - 问题处理完成，耗时 5.93 秒
+2025-08-02 09:42:56 - FlowerRAG - DEBUG - 完整响应: content='根据提供的上下文信息，目前没有关于兰花养护或花语的具体内容。建议您提供更多关于兰花的详细信息，或咨询专业的花卉养护人员以获取准确指导。  \n\n（注：当前知识库仅包含部分花卉的花语含义，未涉及养护方法。如需扩展知识库，可补充相关文档。）' additional_kwargs={'refusal': None} response_metadata={'token_usage': {'completion_tokens': 67, 'prompt_tokens': 446, 'total_tokens': 513, 'completion_tokens_details': None, 'prompt_tokens_details': {'audio_tokens': None, 'cached_tokens': 128}, 'prompt_cache_hit_tokens': 128, 'prompt_cache_miss_tokens': 318}, 'model_name': 'deepseek-chat', 'system_fingerprint': 'fp_8802369eaa_prod0623_fp8_kvcache', 'id': '543533ec-59f6-4086-a852-b2468a094608', 'service_tier': None, 'finish_reason': 'stop', 'logprobs': None} id='run--7dfa5a12-befd-4111-afe3-27adae329ddc-0' usage_metadata={'input_tokens': 446, 'output_tokens': 67, 'total_tokens': 513, 'input_token_details': {'cache_read': 128}, 'output_token_details': {}}
+2025-08-02 09:42:56 - FlowerRAG - DEBUG - 响应内容: 根据提供的上下文信息，目前没有关于兰花养护或花语的具体内容。建议您提供更多关于兰花的详细信息，或咨询专业的花卉养护人员以获取准确指导。  
+
+（注：当前知识库仅包含部分花卉的花语含义，未涉及养护方法。如需扩展知识库，可补充相关文档。）
+2025-08-02 09:42:56 - FlowerRAG - INFO - 收到问题: '送女朋友生日花束推荐'
+2025-08-02 09:42:56 - FlowerRAG - DEBUG - 开始处理问题...
+2025-08-02 09:43:07 - FlowerRAG - INFO - 问题处理完成，耗时 11.68 秒
+2025-08-02 09:43:07 - FlowerRAG - DEBUG - 完整响应: content='根据花语推荐以下适合女友生日的花束搭配（可单选或组合）：  \n\n1. **玫瑰+满天星**  \n   - 红玫瑰：炽热爱意与浪漫  \n   - 粉玫瑰：温柔甜蜜的告白  \n   - 搭配白色满天星（Gypsophila）象征纯洁浪漫的梦境  \n\n2. **百合+郁金香**  \n   - 白百合（Lily）：高贵与永恒祝福  \n   - 粉色郁金香（Tulip）：细腻的柔情与完美爱情  \n\n3. **牡丹+向日葵**  \n   - 牡丹（Peony）：富贵幸福的美好寓意  \n   - 向日葵（Sunflower）：忠诚与阳光般的正能量  \n\n**贴心建议**：  \n- 若女友偏好清新风格，可选择 **铃兰（Lily of the Valley）** 搭配小雏菊（Daisy），寓意幸福与天真希望。  \n- 若喜欢独特花材，**雪绒花（Edelweiss）** 象征珍贵勇敢的爱。  \n\n需要更具体的色系或预算推荐，可随时补充信息哦！' additional_kwargs={'refusal': None} response_metadata={'token_usage': {'completion_tokens': 230, 'prompt_tokens': 455, 'total_tokens': 685, 'completion_tokens_details': None, 'prompt_tokens_details': {'audio_tokens': None, 'cached_tokens': 0}, 'prompt_cache_hit_tokens': 0, 'prompt_cache_miss_tokens': 455}, 'model_name': 'deepseek-chat', 'system_fingerprint': 'fp_8802369eaa_prod0623_fp8_kvcache', 'id': '1f16f288-b9f0-4773-b0ec-916e2ca03946', 'service_tier': None, 'finish_reason': 'stop', 'logprobs': None} id='run--1c7fe3f4-6646-4b25-8e7a-a210906b915e-0' usage_metadata={'input_tokens': 455, 'output_tokens': 230, 'total_tokens': 685, 'input_token_details': {'cache_read': 0}, 'output_token_details': {}}
+2025-08-02 09:43:07 - FlowerRAG - DEBUG - 响应内容: 根据花语推荐以下适合女友生日的花束搭配（可单选或组合）：  
+
+1. **玫瑰+满天星**  
+   - 红玫瑰：炽热爱意与浪漫  
+   - 粉玫瑰：温柔甜蜜的告白  
+   - 搭配白色满天星（Gypsophila）象征纯洁浪漫的梦境  
+
+2. **百合+郁金香**  
+   - 白百合（Lily）：高贵与永恒祝福  
+   - 粉色郁金香（Tulip）：细腻的柔情与完美爱情  
+
+3. *...
+2025-08-02 09:43:07 - FlowerRAG - INFO - 收到问题: '郁金香的花语是什么？'
+2025-08-02 09:43:07 - FlowerRAG - DEBUG - 开始处理问题...
+2025-08-02 09:43:12 - FlowerRAG - INFO - 问题处理完成，耗时 4.30 秒
+2025-08-02 09:43:12 - FlowerRAG - DEBUG - 完整响应: content='郁金香的花语是：完美爱情（Perfect Love）、激情（Passion）和温柔（Tenderness）。' additional_kwargs={'refusal': None} response_metadata={'token_usage': {'completion_tokens': 25, 'prompt_tokens': 455, 'total_tokens': 480, 'completion_tokens_details': None, 'prompt_tokens_details': {'audio_tokens': None, 'cached_tokens': 0}, 'prompt_cache_hit_tokens': 0, 'prompt_cache_miss_tokens': 455}, 'model_name': 'deepseek-chat', 'system_fingerprint': 'fp_8802369eaa_prod0623_fp8_kvcache', 'id': 'd38e7fd9-82b0-4c3e-a909-543dd1139f92', 'service_tier': None, 'finish_reason': 'stop', 'logprobs': None} id='run--a8112b6e-0e38-477d-9abd-cb87423da60e-0' usage_metadata={'input_tokens': 455, 'output_tokens': 25, 'total_tokens': 480, 'input_token_details': {'cache_read': 0}, 'output_token_details': {}}
+2025-08-02 09:43:12 - FlowerRAG - DEBUG - 响应内容: 郁金香的花语是：完美爱情（Perfect Love）、激情（Passion）和温柔（Tenderness）。
+2025-08-02 09:43:12 - FlowerRAG - INFO - 收到问题: '菊花适合在什么季节种植？'
+2025-08-02 09:43:12 - FlowerRAG - DEBUG - 开始处理问题...
+2025-08-02 09:43:18 - FlowerRAG - INFO - 问题处理完成，耗时 6.18 秒
+2025-08-02 09:43:18 - FlowerRAG - DEBUG - 完整响应: content='根据提供的上下文内容，未提及菊花种植季节的相关信息。作为易速鲜花客服助手，建议您咨询园艺专家或提供更多具体需求（如品种、地域等），我们将为您推荐适合的花卉服务。  \n\n（注：当前资料主要涉及品牌理念和部分花语，如需其他帮助可告知具体方向）' additional_kwargs={'refusal': None} response_metadata={'token_usage': {'completion_tokens': 68, 'prompt_tokens': 717, 'total_tokens': 785, 'completion_tokens_details': None, 'prompt_tokens_details': {'audio_tokens': None, 'cached_tokens': 0}, 'prompt_cache_hit_tokens': 0, 'prompt_cache_miss_tokens': 717}, 'model_name': 'deepseek-chat', 'system_fingerprint': 'fp_8802369eaa_prod0623_fp8_kvcache', 'id': '8dad15e3-2e29-4604-895d-cd93e230c29f', 'service_tier': None, 'finish_reason': 'stop', 'logprobs': None} id='run--9006e770-8d27-4426-9c98-d4124e9bd12a-0' usage_metadata={'input_tokens': 717, 'output_tokens': 68, 'total_tokens': 785, 'input_token_details': {'cache_read': 0}, 'output_token_details': {}}
+2025-08-02 09:43:18 - FlowerRAG - DEBUG - 响应内容: 根据提供的上下文内容，未提及菊花种植季节的相关信息。作为易速鲜花客服助手，建议您咨询园艺专家或提供更多具体需求（如品种、地域等），我们将为您推荐适合的花卉服务。  
+
+（注：当前资料主要涉及品牌理念和部分花语，如需其他帮助可告知具体方向）
+2025-08-02 09:43:18 - FlowerRAG - DEBUG - 获取文档数量: 34
+2025-08-02 09:43:18 - FlowerRAG - INFO - 开始重新加载文档
+2025-08-02 09:43:18 - FlowerRAG - INFO - 开始构建 RAG 管道
+2025-08-02 09:43:18 - FlowerRAG - INFO - 开始加载文档，目录: ./OneFlower
+2025-08-02 09:43:19 - FlowerRAG - DEBUG - 成功加载 PDF 文件: 易速鲜花员工手册-1.pdf, 文档数: 32
+2025-08-02 09:43:19 - FlowerRAG - DEBUG - 成功加载 TXT 文件: 花语大全(1).txt, 文档数: 1
+2025-08-02 09:43:19 - FlowerRAG - DEBUG - 成功加载 DOCX 文件: 易速鲜花运营指南(1).docx, 文档数: 1
+2025-08-02 09:43:19 - FlowerRAG - INFO - 成功加载 3 个文件，共 34 个文档片段
+2025-08-02 09:43:19 - FlowerRAG - DEBUG - 加载的文件列表: 易速鲜花员工手册-1.pdf, 花语大全(1).txt, 易速鲜花运营指南(1).docx
+2025-08-02 09:43:19 - FlowerRAG - INFO - 开始分割文档
+2025-08-02 09:43:19 - FlowerRAG - DEBUG - 分割参数: chunk_size=300, chunk_overlap=20
+2025-08-02 09:43:19 - FlowerRAG - INFO - 文档分割完成，生成 80 个文本块
+2025-08-02 09:43:19 - FlowerRAG - DEBUG - 文本块 #1 (长度: 65): 易速鲜花集团 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+易速鲜花服务中心 
+易速鲜花股份有限公司 
+易
+速
+鲜
+花
+员
+工
+手
+册...
+2025-08-02 09:43:19 - FlowerRAG - DEBUG - 文本块 #2 (长度: 281): 易速鲜花集团 
+ 1 
+董事长致辞 
+亲爱的同事： 
+您好！欢迎您加入易速鲜花旅游文化股份有限公司! 
+我代表易速鲜花对您的到来表示热烈的欢迎！并为公司拥有您
+这样优秀的员工而感到自豪和骄傲。易速鲜花...
+2025-08-02 09:43:19 - FlowerRAG - DEBUG - 文本块 #3 (长度: 191): 纳，取长补短，共同奋进，同舟共济。这样，我们就可以成为一个
+坚强的战斗堡垒， 在创易速鲜花发展的道路上披荆斩棘， 乘风破浪，
+无往不胜，所向披靡。最终以一流的服务、一流的管理、一流的信
+誉让我们的易速...
+2025-08-02 09:43:19 - FlowerRAG - DEBUG - 文本块 #4 (长度: 172): 易速鲜花集团 
+ 2 
+易速鲜花晨会宣言 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+今天 
+我开始新的生活 
+我要用全身心的爱迎接今天 
+我会用我全部的热情 
+关爱我的...
+2025-08-02 09:43:19 - FlowerRAG - DEBUG - 文本块 #5 (长度: 288): 易速鲜花集团 
+ 3 
+ 
+易速鲜花简介 
+易速鲜花，一个超越一切鲜花运营商的全新概念，土地犹如一片
+绿色的画布，展示着生机勃勃的花海。我们在这里嫁接了乐、吃、住、
+行、游等元素，打造出一个独特的，富...
+2025-08-02 09:43:19 - FlowerRAG - INFO - 开始创建向量存储
+2025-08-02 09:43:19 - FlowerRAG - DEBUG - 初始化嵌入模型: BAAI/bge-m3 (使用缓存: /home/fiona/data/hf_cache)
+2025-08-02 09:43:30 - FlowerRAG - DEBUG - 创建 Qdrant 向量存储
+2025-08-02 09:44:41 - FlowerRAG - INFO - 向量存储创建成功
+2025-08-02 09:44:41 - FlowerRAG - INFO - 开始构建问答链
+2025-08-02 09:44:41 - FlowerRAG - DEBUG - 初始化 DeepSeek 聊天模型
+2025-08-02 09:44:41 - FlowerRAG - DEBUG - 创建检索器，k=3
+2025-08-02 09:44:41 - FlowerRAG - INFO - 问答链构建成功
+2025-08-02 09:44:41 - FlowerRAG - INFO - RAG 管道构建完成，耗时 82.65 秒
+2025-08-02 09:44:41 - FlowerRAG - INFO - 文档重新加载完成，耗时 82.65 秒
+2025-08-02 09:44:41 - FlowerRAG - DEBUG - 获取文档数量: 34
+2025-08-02 09:44:41 - FlowerRAG - WARNING - 收到空问题
+2025-08-02 09:44:41 - FlowerRAG - INFO - 收到问题: '这是一个与鲜花无关的测试问题'
+2025-08-02 09:44:41 - FlowerRAG - DEBUG - 开始处理问题...
+2025-08-02 09:44:45 - FlowerRAG - INFO - 问题处理完成，耗时 4.68 秒
+2025-08-02 09:44:45 - FlowerRAG - DEBUG - 完整响应: content='抱歉，我无法回答与鲜花无关的问题。如果您有任何关于鲜花或花语的疑问，我将很乐意为您提供帮助！' additional_kwargs={'refusal': None} response_metadata={'token_usage': {'completion_tokens': 27, 'prompt_tokens': 462, 'total_tokens': 489, 'completion_tokens_details': None, 'prompt_tokens_details': {'audio_tokens': None, 'cached_tokens': 0}, 'prompt_cache_hit_tokens': 0, 'prompt_cache_miss_tokens': 462}, 'model_name': 'deepseek-chat', 'system_fingerprint': 'fp_8802369eaa_prod0623_fp8_kvcache', 'id': '3b18c05f-dc44-4dc5-806d-be5dcf28ebb2', 'service_tier': None, 'finish_reason': 'stop', 'logprobs': None} id='run--414df244-693d-4fa9-a341-ad3667cb6de7-0' usage_metadata={'input_tokens': 462, 'output_tokens': 27, 'total_tokens': 489, 'input_token_details': {'cache_read': 0}, 'output_token_details': {}}
+2025-08-02 09:44:45 - FlowerRAG - DEBUG - 响应内容: 抱歉，我无法回答与鲜花无关的问题。如果您有任何关于鲜花或花语的疑问，我将很乐意为您提供帮助！

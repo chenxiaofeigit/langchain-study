@@ -1,0 +1,93 @@
+2025-08-02 10:55:50 - FlowerRAG - INFO - 初始化 FlowerRAG 系统开始
+2025-08-02 10:55:50 - FlowerRAG - DEBUG - 参数: data_dir=./OneFlower, chunk_size=200, chunk_overlap=10, search_k=3, hf_home=/home/fiona/data/hf_cache
+2025-08-02 10:55:50 - FlowerRAG - INFO - 设置 HF_HOME 环境变量: /home/fiona/data/hf_cache
+2025-08-02 10:55:50 - FlowerRAG - INFO - 开始构建 RAG 管道
+2025-08-02 10:55:50 - FlowerRAG - INFO - 开始加载文档，目录: ./OneFlower
+2025-08-02 10:55:51 - FlowerRAG - DEBUG - 成功加载 PDF 文件: 易速鲜花员工手册-1.pdf, 文档数: 32
+2025-08-02 10:55:51 - FlowerRAG - WARNING - 跳过不支持的文件类型: .ipynb_checkpoints
+2025-08-02 10:55:51 - FlowerRAG - DEBUG - 成功加载 TXT 文件: 花语大全(1).txt, 文档数: 1
+2025-08-02 10:55:51 - FlowerRAG - DEBUG - 成功加载 DOCX 文件: 易速鲜花运营指南(1).docx, 文档数: 1
+2025-08-02 10:55:51 - FlowerRAG - INFO - 成功加载 3 个文件，共 34 个文档片段
+2025-08-02 10:55:51 - FlowerRAG - DEBUG - 加载的文件列表: 易速鲜花员工手册-1.pdf, 花语大全(1).txt, 易速鲜花运营指南(1).docx
+2025-08-02 10:55:51 - FlowerRAG - INFO - 开始分割文档
+2025-08-02 10:55:51 - FlowerRAG - DEBUG - 分割参数: chunk_size=200, chunk_overlap=10
+2025-08-02 10:55:51 - FlowerRAG - INFO - 文档分割完成，生成 112 个文本块
+2025-08-02 10:55:51 - FlowerRAG - DEBUG - 文本块 #1 (长度: 65): 易速鲜花集团 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+易速鲜花服务中心 
+易速鲜花股份有限公司 
+易
+速
+鲜
+花
+员
+工
+手
+册...
+2025-08-02 10:55:51 - FlowerRAG - DEBUG - 文本块 #2 (长度: 190): 易速鲜花集团 
+ 1 
+董事长致辞 
+亲爱的同事： 
+您好！欢迎您加入易速鲜花旅游文化股份有限公司! 
+我代表易速鲜花对您的到来表示热烈的欢迎！并为公司拥有您
+这样优秀的员工而感到自豪和骄傲。易速鲜花...
+2025-08-02 10:55:51 - FlowerRAG - DEBUG - 文本块 #3 (长度: 183): 结向上，完美无缺”的企业精神，以高度的主人翁责任感、使命感，
+与易速鲜花同呼吸、共命运，在各自的岗位上，勤奋敬业，尽职尽
+责，奋力拼搏。作为大家庭的一员，同仁之间应默契配合，相互接
+纳，取长补短，共同...
+2025-08-02 10:55:51 - FlowerRAG - DEBUG - 文本块 #4 (长度: 98): 誉让我们的易速鲜花成为全国的一颗明珠。 
+希望各位以本手册为指南，共创易速鲜花美好明天! 
+最后，诚挚地祝愿大家在公司工作愉快，前程似锦! 
+ 
+ 
+                    签名：...
+2025-08-02 10:55:51 - FlowerRAG - DEBUG - 文本块 #5 (长度: 172): 易速鲜花集团 
+ 2 
+易速鲜花晨会宣言 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+今天 
+我开始新的生活 
+我要用全身心的爱迎接今天 
+我会用我全部的热情 
+关爱我的...
+2025-08-02 10:55:51 - FlowerRAG - INFO - 开始创建向量存储
+2025-08-02 10:55:51 - FlowerRAG - DEBUG - 初始化嵌入模型: BAAI/bge-m3 (使用缓存: /home/fiona/data/hf_cache)
+2025-08-02 10:56:22 - FlowerRAG - DEBUG - 创建 Qdrant 向量存储
+2025-08-02 10:57:38 - FlowerRAG - INFO - 向量存储创建成功
+2025-08-02 10:57:38 - FlowerRAG - INFO - 开始构建问答链
+2025-08-02 10:57:38 - FlowerRAG - DEBUG - 初始化 DeepSeek 聊天模型
+2025-08-02 10:57:38 - FlowerRAG - DEBUG - 创建检索器，k=3
+2025-08-02 10:57:38 - FlowerRAG - INFO - 问答链构建成功
+2025-08-02 10:57:38 - FlowerRAG - INFO - RAG 管道构建完成，耗时 107.65 秒
+2025-08-02 10:57:38 - FlowerRAG - INFO - FlowerRAG 系统初始化成功
+2025-08-02 10:57:38 - FlowerRAG - INFO - 收到问题: '玫瑰花语'
+2025-08-02 10:57:38 - FlowerRAG - DEBUG - 开始处理问题...
+2025-08-02 10:57:43 - FlowerRAG - INFO - 问题处理完成，耗时 4.91 秒
+2025-08-02 10:57:43 - FlowerRAG - DEBUG - 完整响应: content='玫瑰花语是：Love（爱情）、Passion（热情）、Beauty（美丽）。' additional_kwargs={'refusal': None} response_metadata={'token_usage': {'completion_tokens': 18, 'prompt_tokens': 374, 'total_tokens': 392, 'completion_tokens_details': None, 'prompt_tokens_details': {'audio_tokens': None, 'cached_tokens': 0}, 'prompt_cache_hit_tokens': 0, 'prompt_cache_miss_tokens': 374}, 'model_name': 'deepseek-chat', 'system_fingerprint': 'fp_8802369eaa_prod0623_fp8_kvcache', 'id': '879d6109-651c-46c0-95ba-ab50107a1632', 'service_tier': None, 'finish_reason': 'stop', 'logprobs': None} id='run--46cade07-ae57-44bb-bce9-53adea66690e-0' usage_metadata={'input_tokens': 374, 'output_tokens': 18, 'total_tokens': 392, 'input_token_details': {'cache_read': 0}, 'output_token_details': {}}
+2025-08-02 10:57:43 - FlowerRAG - DEBUG - 响应内容: 玫瑰花语是：Love（爱情）、Passion（热情）、Beauty（美丽）。

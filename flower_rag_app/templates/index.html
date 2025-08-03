@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>鲜花知识问答系统</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><i class="fas fa-flower"></i> 鲜花知识问答系统</h1>
+            <p>基于 RAG 技术的专业鲜花知识库</p>
+        </header>
+        
+        <div class="chat-container">
+            <div id="chat-history"></div>
+            
+            <div class="input-area">
+                <input type="text" id="question-input" placeholder="输入关于鲜花的问题..." autocomplete="off">
+                <button id="ask-btn"><i class="fas fa-paper-plane"></i> 提问</button>
+            </div>
+        </div>
+        
+        <div class="info-panel">
+            <button id="reload-btn"><i class="fas fa-sync"></i> 重新加载知识库</button>
+            <div id="system-info">
+                <p>知识来源: OneFlower 目录下的文档</p>
+                <p id="doc-count">已加载文档: 0</p>
+                <p id="chunk-count">文本块数量: 0</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const chatHistory = document.getElementById('chat-history');
+            const questionInput = document.getElementById('question-input');
+            const askBtn = document.getElementById('ask-btn');
+            const reloadBtn = document.getElementById('reload-btn');
+            const docCount = document.getElementById('doc-count');
+            const chunkCount = document.getElementById('chunk-count');
+            
+            // 获取系统信息
+            function fetchSystemInfo() {
+                fetch('/health')
+                    .then(response => response.json())
+                    .then(data => {
+                        docCount.textContent = `已加载文档: ${data.document_count || 0}`;
+                        chunkCount.textContent = `文本块数量: ${data.chunk_count || 0}`;
+                    })
+                    .catch(error => console.error('获取系统信息失败:', error));
+            }
+            
+            // 初始化时获取系统信息
+            fetchSystemInfo();
+            
+            // 添加消息到聊天历史
+            function addMessage(role, content, responseTime) {
+                const messageDiv = document.createElement('div');
+                messageDiv.className = `message ${role}`;
+                
+                if (role === 'user') {
+                    messageDiv.innerHTML = `
+                        <div class="avatar"><i class="fas fa-user"></i></div>
+                        <div class="content">
+                            <div class="text">${content}</div>
+                        </div>
+                    `;
+                } else {
+                    messageDiv.innerHTML = `
+                        <div class="avatar"><i class="fas fa-robot"></i></div>
+                        <div class="content">
+                            <div class="text">${content}</div>
+                            ${responseTime ? `<div class="meta">响应时间: ${responseTime}</div>` : ''}
+                        </div>
+                    `;
+                }
+                
+                chatHistory.appendChild(messageDiv);
+                chatHistory.scrollTop = chatHistory.scrollHeight;
+            }
+            
+            // 显示加载状态
+            function showLoading() {
+                const loadingMsg = document.createElement('div');
+                loadingMsg.className = 'message assistant loading';
+                loadingMsg.innerHTML = `
+                    <div class="avatar"><i class="fas fa-robot"></i></div>
+                    <div class="content">
+                        <div class="text">思考中 <span class="dots">...</span></div>
+                    </div>
+                `;
+                chatHistory.appendChild(loadingMsg);
+                chatHistory.scrollTop = chatHistory.scrollHeight;
+                
+                // 动画效果
+                const dots = loadingMsg.querySelector('.dots');
+                let dotCount = 0;
+                const interval = setInterval(() => {
+                    dotCount = (dotCount + 1) % 4;
+                    dots.textContent = '.'.repeat(dotCount);
+                }, 500);
+                
+                return {
+                    element: loadingMsg,
+                    interval: interval
+                };
+            }
+            
+            // 处理提问
+            async function askQuestion() {
+                const question = questionInput.value.trim();
+                if (!question) return;
+                
+                // 添加用户消息
+                addMessage('user', question);
+                questionInput.value = '';
+                
+                // 显示加载状态
+                const loading = showLoading();
+                
+                try {
+                    // 发送请求
+                    const response = await fetch('/ask', {
+                        method: 'POST',
+                        headers: {'Content-Type': 'application/json'},
+                        body: JSON.stringify({ question })
+                    });
+                    
+                    const data = await response.json();
+                    
+                    // 移除加载状态
+                    clearInterval(loading.interval);
+                    chatHistory.removeChild(loading.element);
+                    
+                    // 添加回答
+                    if (data.error) {
+                        addMessage('assistant', `错误: ${data.error}`);
+                    } else {
+                        addMessage('assistant', data.answer, data.response_time);
+                    }
+                } catch (error) {
+                    // 移除加载状态
+                    clearInterval(loading.interval);
+                    chatHistory.removeChild(loading.element);
+                    
+                    addMessage('assistant', `请求失败: ${error.message}`);
+                }
+            }
+            
+            // 重新加载知识库
+            async function reloadKnowledgeBase() {
+                reloadBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> 重新加载中...';
+                reloadBtn.disabled = true;
+                
+                try {
+                    const response = await fetch('/reload', {
+                        method: 'POST'
+                    });
+                    
+                    const data = await response.json();
+                    if (data.error) {
+                        alert(`重新加载失败: ${data.error}`);
+                    } else {
+                        alert(data.message);
+                        // 更新系统信息
+                        fetchSystemInfo();
+                    }
+                } catch (error) {
+                    alert(`重新加载失败: ${error.message}`);
+                } finally {
+                    reloadBtn.innerHTML = '<i class="fas fa-sync"></i> 重新加载知识库';
+                    reloadBtn.disabled = false;
+                }
+            }
+            
+            // 事件监听
+            askBtn.addEventListener('click', askQuestion);
+            reloadBtn.addEventListener('click', reloadKnowledgeBase);
+            questionInput.addEventListener('keypress', (e) => {
+                if (e.key === 'Enter') askQuestion();
+            });
+        });
+    </script>
+</body>
+</html>
