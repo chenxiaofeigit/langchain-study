@@ -1,0 +1,52 @@
+2025-08-15 15:47:45,781 - WebsiteTester - INFO - Initialized FunctionIdentifier with model: deepseek and PlayWrightBrowserToolkit
+2025-08-15 15:47:45,781 - WebsiteTester - INFO - PlaywrightTester 初始化 (集成LangChain工具包)
+2025-08-15 15:47:45,782 - WebsiteTester - INFO - 初始化 WebsiteTestRunner
+2025-08-15 15:47:45,782 - WebsiteTester - INFO - 🏁 开始测试网站: https://python.langchain.com/docs/integrations/tools/playwright/
+2025-08-15 15:47:45,782 - WebsiteTester - INFO - 🔍 正在识别网站功能点...
+2025-08-15 15:47:45,782 - WebsiteTester - INFO - 开始识别功能点: https://python.langchain.com/docs/integrations/tools/playwright/
+2025-08-15 15:47:46,301 - WebsiteTester - INFO - Playwright工具包已初始化
+2025-08-15 15:47:46,302 - WebsiteTester - INFO - 开始获取页面内容: https://python.langchain.com/docs/integrations/tools/playwright/
+2025-08-15 15:47:46,303 - WebsiteTester - ERROR - 获取页面内容失败: BaseTool.arun() missing 1 required positional argument: 'tool_input'
+2025-08-15 15:47:46,552 - httpx - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-15 15:48:21,513 - WebsiteTester - INFO - 成功识别 7 个功能点
+2025-08-15 15:48:21,513 - WebsiteTester - INFO - ✅ 识别到 7 个功能点
+2025-08-15 15:48:21,513 - WebsiteTester - INFO - 🔧 正在设置测试环境...
+2025-08-15 15:48:21,984 - WebsiteTester - ERROR - Playwright 初始化失败: [Errno 2] No such file or directory: '/home/fiona/projects/langchain-study/11_Agent/website_tester/browser_context/browser_context/state.json'
+2025-08-15 15:51:58,660 - WebsiteTester - INFO - Initialized FunctionIdentifier with model: deepseek and PlayWrightBrowserToolkit
+2025-08-15 15:51:58,660 - WebsiteTester - INFO - PlaywrightTester 初始化 (集成LangChain工具包)
+2025-08-15 15:51:58,660 - WebsiteTester - INFO - 初始化 WebsiteTestRunner
+2025-08-15 15:51:58,660 - WebsiteTester - INFO - 🏁 开始测试网站: https://python.langchain.com/docs/integrations/tools/playwright/
+2025-08-15 15:51:58,660 - WebsiteTester - INFO - 🔍 正在识别网站功能点...
+2025-08-15 15:51:58,661 - WebsiteTester - INFO - 开始识别功能点: https://python.langchain.com/docs/integrations/tools/playwright/
+2025-08-15 15:51:59,163 - WebsiteTester - INFO - Playwright工具包已初始化
+2025-08-15 15:51:59,164 - WebsiteTester - INFO - 开始获取页面内容: https://python.langchain.com/docs/integrations/tools/playwright/
+2025-08-15 15:51:59,164 - WebsiteTester - ERROR - 获取页面内容失败: BaseTool.arun() missing 1 required positional argument: 'tool_input'
+2025-08-15 15:51:59,477 - httpx - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-15 15:52:35,197 - WebsiteTester - INFO - 成功识别 7 个功能点
+2025-08-15 15:52:35,197 - WebsiteTester - INFO - ✅ 识别到 7 个功能点
+2025-08-15 15:52:35,197 - WebsiteTester - INFO - 🔧 正在设置测试环境...
+2025-08-15 15:52:35,683 - WebsiteTester - ERROR - Playwright 初始化失败: [Errno 2] No such file or directory: '/home/fiona/projects/langchain-study/11_Agent/website_tester/browser_context/state.json'
+2025-08-15 15:56:51,975 - WebsiteTester - INFO - Initialized FunctionIdentifier with model: deepseek and PlayWrightBrowserToolkit
+2025-08-15 15:56:51,980 - WebsiteTester - INFO - PlaywrightTester 初始化 (集成LangChain工具包)
+2025-08-15 15:56:51,980 - WebsiteTester - INFO - 初始化 WebsiteTestRunner
+2025-08-15 15:56:51,981 - WebsiteTester - INFO - 🏁 开始测试网站: https://python.langchain.com/docs/integrations/tools/playwright/
+2025-08-15 15:56:51,981 - WebsiteTester - INFO - 🔍 正在识别网站功能点...
+2025-08-15 15:56:51,981 - WebsiteTester - INFO - 开始识别功能点: https://python.langchain.com/docs/integrations/tools/playwright/
+2025-08-15 15:56:52,571 - WebsiteTester - INFO - Playwright工具包已初始化
+2025-08-15 15:56:52,571 - WebsiteTester - INFO - 开始获取页面内容: https://python.langchain.com/docs/integrations/tools/playwright/
+2025-08-15 15:56:52,572 - WebsiteTester - ERROR - 获取页面内容失败: BaseTool.arun() missing 1 required positional argument: 'tool_input'
+2025-08-15 15:56:52,923 - httpx - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-15 15:57:26,386 - WebsiteTester - INFO - 成功识别 7 个功能点
+2025-08-15 15:57:26,386 - WebsiteTester - INFO - ✅ 识别到 7 个功能点
+2025-08-15 15:57:26,386 - WebsiteTester - INFO - 🔧 正在设置测试环境...
+2025-08-15 15:57:29,442 - WebsiteTester - INFO - Playwright 环境设置完成（上下文缓存: /home/fiona/projects/langchain-study/11_Agent/website_tester/browser_context）
+2025-08-15 15:57:29,442 - WebsiteTester - INFO - 首次创建状态文件: /home/fiona/projects/langchain-study/11_Agent/website_tester/browser_context/state.json
+2025-08-15 15:57:29,442 - WebsiteTester - INFO - 🚀 开始并行执行功能测试...
+2025-08-15 15:57:29,443 - WebsiteTester - INFO - 开始测试功能: Playwright Tool Documentation (优先级 1)
+2025-08-15 15:57:29,443 - WebsiteTester - INFO - 导航到: https://python.langchain.com/docs/integrations/tools/playwright/ (带重试机制)
+2025-08-15 15:57:29,444 - WebsiteTester - INFO - 开始测试功能: Code Examples (优先级 1)
+2025-08-15 15:57:29,445 - WebsiteTester - INFO - 开始测试功能: Navigation Sidebar (优先级 2)
+2025-08-15 15:57:29,445 - WebsiteTester - INFO - 开始测试功能: Search Functionality (优先级 2)
+2025-08-15 15:57:29,445 - WebsiteTester - INFO - 导航到: https://python.langchain.com/docs/integrations/tools/playwright/ (带重试机制)
+2025-08-15 15:57:29,446 - WebsiteTester - INFO - 导航到: https://python.langchain.com/docs/integrations/tools/playwright/ (带重试机制)
+2025-08-15 15:57:29,447 - WebsiteTester - INFO - 导航到: https://python.langchain.com/docs/integrations/tools/playwright/ (带重试机制)

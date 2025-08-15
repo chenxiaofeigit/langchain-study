@@ -1,0 +1,218 @@
+2025-08-15 11:37:22,899 - WebsiteTester - INFO - Initialized FunctionIdentifier with model: deepseek and PlayWrightBrowserToolkit
+2025-08-15 11:40:14,850 - WebsiteTester - INFO - Initialized FunctionIdentifier with model: deepseek and PlayWrightBrowserToolkit
+2025-08-15 11:40:14,850 - WebsiteTester - INFO - PlaywrightTester 初始化 (集成LangChain工具包)
+2025-08-15 11:40:14,850 - WebsiteTester - INFO - 初始化 WebsiteTestRunner
+2025-08-15 11:41:24,530 - WebsiteTester - INFO - Initialized FunctionIdentifier with model: deepseek and PlayWrightBrowserToolkit
+2025-08-15 11:41:24,530 - WebsiteTester - INFO - PlaywrightTester 初始化 (集成LangChain工具包)
+2025-08-15 11:41:24,530 - WebsiteTester - INFO - 初始化 WebsiteTestRunner
+2025-08-15 11:41:24,530 - WebsiteTester - INFO - 🏁 开始测试网站: https://python.langchain.com/docs/integrations/tools/playwright/
+2025-08-15 11:41:24,530 - WebsiteTester - INFO - 🔍 正在识别网站功能点...
+2025-08-15 11:41:25,079 - WebsiteTester - INFO - Playwright工具包已初始化
+2025-08-15 11:41:25,079 - WebsiteTester - INFO - 开始识别功能点: https://python.langchain.com/docs/integrations/tools/playwright/
+2025-08-15 11:41:25,079 - WebsiteTester - INFO - 开始获取页面内容: https://python.langchain.com/docs/integrations/tools/playwright/
+2025-08-15 11:41:25,079 - WebsiteTester - ERROR - 获取页面内容失败: 'PlayWrightBrowserToolkit' object has no attribute 'async_run_tool'
+2025-08-15 11:41:25,239 - WebsiteTester - ERROR - 功能点识别失败: "Input to ChatPromptTemplate is missing variables {'format_instructions'}.  Expected: ['format_instructions', 'html_summary', 'url'] Received: ['url', 'html', 'title', 'html_summary']\nNote: if you intended {format_instructions} to be part of the string and not a variable, please escape it with double curly braces like: '{{format_instructions}}'.\nFor troubleshooting, visit: https://python.langchain.com/docs/troubleshooting/errors/INVALID_PROMPT_INPUT "
+2025-08-15 11:41:25,239 - WebsiteTester - ERROR - 未识别到任何功能点，测试终止
+2025-08-15 11:50:33,885 - WebsiteTester - INFO - Initialized FunctionIdentifier with model: deepseek and PlayWrightBrowserToolkit
+2025-08-15 11:50:33,885 - WebsiteTester - INFO - PlaywrightTester 初始化 (集成LangChain工具包)
+2025-08-15 11:50:33,885 - WebsiteTester - INFO - 初始化 WebsiteTestRunner
+2025-08-15 11:50:33,886 - WebsiteTester - INFO - 🏁 开始测试网站: https://python.langchain.com/docs/integrations/tools/playwright/
+2025-08-15 11:50:33,886 - WebsiteTester - INFO - 🔍 正在识别网站功能点...
+2025-08-15 11:50:34,619 - WebsiteTester - INFO - Playwright工具包已初始化
+2025-08-15 11:50:34,619 - WebsiteTester - INFO - 开始识别功能点: https://python.langchain.com/docs/integrations/tools/playwright/
+2025-08-15 11:50:34,619 - WebsiteTester - INFO - 开始获取页面内容: https://python.langchain.com/docs/integrations/tools/playwright/
+2025-08-15 11:50:34,619 - WebsiteTester - ERROR - 获取页面内容失败: 'PlayWrightBrowserToolkit' object has no attribute 'async_run_tool'
+2025-08-15 11:50:34,637 - WebsiteTester - ERROR - 功能点识别失败: "Input to ChatPromptTemplate is missing variables {'format_instructions'}.  Expected: ['format_instructions', 'html_summary', 'url'] Received: ['url', 'html', 'title', 'html_summary']\nNote: if you intended {format_instructions} to be part of the string and not a variable, please escape it with double curly braces like: '{{format_instructions}}'.\nFor troubleshooting, visit: https://python.langchain.com/docs/troubleshooting/errors/INVALID_PROMPT_INPUT "
+2025-08-15 11:50:34,637 - WebsiteTester - ERROR - 未识别到任何功能点，测试终止
+2025-08-15 11:51:15,255 - WebsiteTester - INFO - Initialized FunctionIdentifier with model: deepseek and PlayWrightBrowserToolkit
+2025-08-15 11:51:15,255 - WebsiteTester - INFO - PlaywrightTester 初始化 (集成LangChain工具包)
+2025-08-15 11:51:15,255 - WebsiteTester - INFO - 初始化 WebsiteTestRunner
+2025-08-15 11:51:15,255 - WebsiteTester - INFO - 🏁 开始测试网站: https://python.langchain.com/docs/integrations/tools/playwright/
+2025-08-15 11:51:15,255 - WebsiteTester - INFO - 🔍 正在识别网站功能点...
+2025-08-15 11:51:15,795 - WebsiteTester - INFO - Playwright工具包已初始化
+2025-08-15 11:51:15,795 - WebsiteTester - INFO - 开始识别功能点: https://python.langchain.com/docs/integrations/tools/playwright/
+2025-08-15 11:51:15,795 - WebsiteTester - INFO - 开始获取页面内容: https://python.langchain.com/docs/integrations/tools/playwright/
+2025-08-15 11:51:15,795 - WebsiteTester - ERROR - 获取页面内容失败: 'PlayWrightBrowserToolkit' object has no attribute 'async_run_tool'
+2025-08-15 11:51:15,813 - WebsiteTester - ERROR - 功能点识别失败: "Input to ChatPromptTemplate is missing variables {'format_instructions'}.  Expected: ['format_instructions', 'html_summary', 'url'] Received: ['url', 'html', 'title', 'html_summary']\nNote: if you intended {format_instructions} to be part of the string and not a variable, please escape it with double curly braces like: '{{format_instructions}}'.\nFor troubleshooting, visit: https://python.langchain.com/docs/troubleshooting/errors/INVALID_PROMPT_INPUT "
+2025-08-15 11:51:15,814 - WebsiteTester - ERROR - 未识别到任何功能点，测试终止
+2025-08-15 11:54:45,523 - WebsiteTester - INFO - Initialized FunctionIdentifier with model: deepseek and PlayWrightBrowserToolkit
+2025-08-15 11:54:45,524 - WebsiteTester - INFO - PlaywrightTester 初始化 (集成LangChain工具包)
+2025-08-15 11:54:45,524 - WebsiteTester - INFO - 初始化 WebsiteTestRunner
+2025-08-15 11:54:45,524 - WebsiteTester - INFO - 🏁 开始测试网站: https://python.langchain.com/docs/integrations/tools/playwright/
+2025-08-15 11:54:45,524 - WebsiteTester - INFO - 🔍 正在识别网站功能点...
+2025-08-15 11:54:46,215 - WebsiteTester - INFO - Playwright工具包已初始化
+2025-08-15 11:54:46,216 - WebsiteTester - INFO - 开始识别功能点: https://python.langchain.com/docs/integrations/tools/playwright/
+2025-08-15 11:54:46,216 - WebsiteTester - INFO - 开始获取页面内容: https://python.langchain.com/docs/integrations/tools/playwright/
+2025-08-15 11:54:46,218 - WebsiteTester - ERROR - 获取页面内容失败: 
+2025-08-15 11:54:46,238 - WebsiteTester - ERROR - 功能点识别失败: "Input to ChatPromptTemplate is missing variables {'format_instructions'}.  Expected: ['format_instructions', 'html_summary', 'url'] Received: ['url', 'html', 'title', 'html_summary']\nNote: if you intended {format_instructions} to be part of the string and not a variable, please escape it with double curly braces like: '{{format_instructions}}'.\nFor troubleshooting, visit: https://python.langchain.com/docs/troubleshooting/errors/INVALID_PROMPT_INPUT "
+2025-08-15 11:54:46,239 - WebsiteTester - ERROR - 未识别到任何功能点，测试终止
+2025-08-15 11:56:06,562 - WebsiteTester - INFO - Initialized FunctionIdentifier with model: deepseek and PlayWrightBrowserToolkit
+2025-08-15 11:56:06,562 - WebsiteTester - INFO - PlaywrightTester 初始化 (集成LangChain工具包)
+2025-08-15 11:56:06,562 - WebsiteTester - INFO - 初始化 WebsiteTestRunner
+2025-08-15 11:56:06,563 - WebsiteTester - INFO - 🏁 开始测试网站: https://python.langchain.com/docs/integrations/tools/playwright/
+2025-08-15 11:56:06,563 - WebsiteTester - INFO - 🔍 正在识别网站功能点...
+2025-08-15 11:56:07,095 - WebsiteTester - INFO - Playwright工具包已初始化
+2025-08-15 11:56:07,097 - WebsiteTester - INFO - 开始识别功能点: https://python.langchain.com/docs/integrations/tools/playwright/
+2025-08-15 11:56:07,098 - WebsiteTester - INFO - 开始获取页面内容: https://python.langchain.com/docs/integrations/tools/playwright/
+2025-08-15 11:56:07,099 - WebsiteTester - ERROR - 获取页面内容失败: 
+2025-08-15 11:56:07,120 - WebsiteTester - ERROR - 功能点识别失败: "Input to ChatPromptTemplate is missing variables {'format_instructions'}.  Expected: ['format_instructions', 'html_summary', 'url'] Received: ['url', 'html', 'title', 'html_summary']\nNote: if you intended {format_instructions} to be part of the string and not a variable, please escape it with double curly braces like: '{{format_instructions}}'.\nFor troubleshooting, visit: https://python.langchain.com/docs/troubleshooting/errors/INVALID_PROMPT_INPUT "
+2025-08-15 11:56:07,120 - WebsiteTester - ERROR - 未识别到任何功能点，测试终止
+2025-08-15 12:14:44,156 - WebsiteTester - INFO - Initialized FunctionIdentifier with model: deepseek and PlayWrightBrowserToolkit
+2025-08-15 12:14:44,156 - WebsiteTester - INFO - PlaywrightTester 初始化 (集成LangChain工具包)
+2025-08-15 12:14:44,156 - WebsiteTester - INFO - 初始化 WebsiteTestRunner
+2025-08-15 12:14:44,156 - WebsiteTester - INFO - 🏁 开始测试网站: https://python.langchain.com/docs/integrations/tools/playwright/
+2025-08-15 12:14:44,156 - WebsiteTester - INFO - 🔍 正在识别网站功能点...
+2025-08-15 12:14:44,691 - WebsiteTester - INFO - Playwright工具包已初始化
+2025-08-15 12:14:44,692 - WebsiteTester - INFO - 开始识别功能点: https://python.langchain.com/docs/integrations/tools/playwright/
+2025-08-15 12:14:44,692 - WebsiteTester - INFO - 开始获取页面内容: https://python.langchain.com/docs/integrations/tools/playwright/
+2025-08-15 12:14:44,693 - WebsiteTester - ERROR - 获取页面内容失败: 
+2025-08-15 12:14:44,719 - WebsiteTester - ERROR - 功能点识别失败: "Input to ChatPromptTemplate is missing variables {'format_instructions'}.  Expected: ['format_instructions', 'html_summary', 'url'] Received: ['url', 'html', 'title', 'html_summary']\nNote: if you intended {format_instructions} to be part of the string and not a variable, please escape it with double curly braces like: '{{format_instructions}}'.\nFor troubleshooting, visit: https://python.langchain.com/docs/troubleshooting/errors/INVALID_PROMPT_INPUT "
+2025-08-15 12:14:44,719 - WebsiteTester - ERROR - 未识别到任何功能点，测试终止
+2025-08-15 14:29:37,467 - WebsiteTester - INFO - Initialized FunctionIdentifier with model: deepseek and PlayWrightBrowserToolkit
+2025-08-15 14:29:37,480 - WebsiteTester - INFO - PlaywrightTester 初始化 (集成LangChain工具包)
+2025-08-15 14:29:37,480 - WebsiteTester - INFO - 初始化 WebsiteTestRunner
+2025-08-15 14:29:37,480 - WebsiteTester - INFO - 🏁 开始测试网站: https://python.langchain.com/docs/integrations/tools/playwright/
+2025-08-15 14:29:37,480 - WebsiteTester - INFO - 🔍 正在识别网站功能点...
+2025-08-15 14:29:45,375 - WebsiteTester - INFO - Playwright工具包已初始化
+2025-08-15 14:29:45,375 - WebsiteTester - INFO - 开始识别功能点: https://python.langchain.com/docs/integrations/tools/playwright/
+2025-08-15 14:29:45,375 - WebsiteTester - INFO - 开始获取页面内容: https://python.langchain.com/docs/integrations/tools/playwright/
+2025-08-15 14:29:45,375 - WebsiteTester - ERROR - 获取页面内容失败: 
+2025-08-15 14:29:45,674 - WebsiteTester - ERROR - 功能点识别失败: "Input to ChatPromptTemplate is missing variables {'format_instructions'}.  Expected: ['format_instructions', 'html_summary', 'url'] Received: ['url', 'html', 'title', 'html_summary']\nNote: if you intended {format_instructions} to be part of the string and not a variable, please escape it with double curly braces like: '{{format_instructions}}'.\nFor troubleshooting, visit: https://python.langchain.com/docs/troubleshooting/errors/INVALID_PROMPT_INPUT "
+2025-08-15 14:29:45,674 - WebsiteTester - ERROR - 未识别到任何功能点，测试终止
+2025-08-15 14:31:50,890 - WebsiteTester - INFO - Initialized FunctionIdentifier with model: deepseek and PlayWrightBrowserToolkit
+2025-08-15 14:31:50,890 - WebsiteTester - INFO - PlaywrightTester 初始化 (集成LangChain工具包)
+2025-08-15 14:31:50,891 - WebsiteTester - INFO - 初始化 WebsiteTestRunner
+2025-08-15 14:31:50,891 - WebsiteTester - INFO - 🏁 开始测试网站: https://python.langchain.com/docs/integrations/tools/playwright/
+2025-08-15 14:31:50,891 - WebsiteTester - INFO - 🔍 正在识别网站功能点...
+2025-08-15 14:31:51,409 - WebsiteTester - INFO - Playwright工具包已初始化
+2025-08-15 14:31:51,409 - WebsiteTester - INFO - 开始识别功能点: https://python.langchain.com/docs/integrations/tools/playwright/
+2025-08-15 14:31:51,409 - WebsiteTester - INFO - 开始获取页面内容: https://python.langchain.com/docs/integrations/tools/playwright/
+2025-08-15 14:31:51,410 - WebsiteTester - ERROR - 获取页面内容失败: 
+2025-08-15 14:31:51,426 - WebsiteTester - ERROR - 功能点识别失败: "Input to ChatPromptTemplate is missing variables {'self.format_instructions'}.  Expected: ['html_summary', 'self.format_instructions', 'url'] Received: ['url', 'html', 'title', 'html_summary']\nNote: if you intended {self.format_instructions} to be part of the string and not a variable, please escape it with double curly braces like: '{{self.format_instructions}}'.\nFor troubleshooting, visit: https://python.langchain.com/docs/troubleshooting/errors/INVALID_PROMPT_INPUT "
+2025-08-15 14:31:51,426 - WebsiteTester - ERROR - 未识别到任何功能点，测试终止
+2025-08-15 14:32:43,430 - WebsiteTester - INFO - Initialized FunctionIdentifier with model: deepseek and PlayWrightBrowserToolkit
+2025-08-15 14:32:43,430 - WebsiteTester - INFO - PlaywrightTester 初始化 (集成LangChain工具包)
+2025-08-15 14:32:43,430 - WebsiteTester - INFO - 初始化 WebsiteTestRunner
+2025-08-15 14:32:43,430 - WebsiteTester - INFO - 🏁 开始测试网站: https://python.langchain.com/docs/integrations/tools/playwright/
+2025-08-15 14:32:43,430 - WebsiteTester - INFO - 🔍 正在识别网站功能点...
+2025-08-15 14:32:43,951 - WebsiteTester - INFO - Playwright工具包已初始化
+2025-08-15 14:32:43,952 - WebsiteTester - INFO - 开始识别功能点: https://python.langchain.com/docs/integrations/tools/playwright/
+2025-08-15 14:32:43,952 - WebsiteTester - INFO - 开始获取页面内容: https://python.langchain.com/docs/integrations/tools/playwright/
+2025-08-15 14:32:43,953 - WebsiteTester - ERROR - 获取页面内容失败: 
+2025-08-15 14:32:43,972 - WebsiteTester - ERROR - 功能点识别失败: "Input to ChatPromptTemplate is missing variables {'format_instructions'}.  Expected: ['format_instructions', 'html_summary', 'url'] Received: ['url', 'html', 'title', 'html_summary']\nNote: if you intended {format_instructions} to be part of the string and not a variable, please escape it with double curly braces like: '{{format_instructions}}'.\nFor troubleshooting, visit: https://python.langchain.com/docs/troubleshooting/errors/INVALID_PROMPT_INPUT "
+2025-08-15 14:32:43,973 - WebsiteTester - ERROR - 未识别到任何功能点，测试终止
+2025-08-15 14:52:07,866 - WebsiteTester - INFO - Initialized FunctionIdentifier with model: deepseek and PlayWrightBrowserToolkit
+2025-08-15 14:52:07,866 - WebsiteTester - INFO - PlaywrightTester 初始化 (集成LangChain工具包)
+2025-08-15 14:52:07,866 - WebsiteTester - INFO - 初始化 WebsiteTestRunner
+2025-08-15 14:52:07,866 - WebsiteTester - INFO - 🏁 开始测试网站: https://python.langchain.com/docs/integrations/tools/playwright/
+2025-08-15 14:52:07,866 - WebsiteTester - INFO - 🔍 正在识别网站功能点...
+2025-08-15 14:57:22,664 - WebsiteTester - INFO - Initialized FunctionIdentifier with model: deepseek and PlayWrightBrowserToolkit
+2025-08-15 14:57:22,664 - WebsiteTester - INFO - PlaywrightTester 初始化 (集成LangChain工具包)
+2025-08-15 14:57:22,664 - WebsiteTester - INFO - 初始化 WebsiteTestRunner
+2025-08-15 14:57:22,664 - WebsiteTester - INFO - 🏁 开始测试网站: https://python.langchain.com/docs/integrations/tools/playwright/
+2025-08-15 14:57:22,664 - WebsiteTester - INFO - 🔍 正在识别网站功能点...
+2025-08-15 14:57:23,149 - WebsiteTester - INFO - Playwright工具包已初始化
+2025-08-15 14:57:23,149 - WebsiteTester - INFO - 开始识别功能点: https://python.langchain.com/docs/integrations/tools/playwright/
+2025-08-15 14:57:23,149 - WebsiteTester - INFO - 开始获取页面内容: https://python.langchain.com/docs/integrations/tools/playwright/
+2025-08-15 14:57:23,149 - WebsiteTester - ERROR - 获取页面内容失败: 
+2025-08-15 14:57:23,537 - httpx - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-15 14:57:39,079 - WebsiteTester - INFO - 成功识别 1 个功能点
+2025-08-15 14:57:39,079 - WebsiteTester - ERROR - 功能点识别失败: 'dict' object has no attribute 'name'
+2025-08-15 14:57:39,079 - WebsiteTester - ERROR - 未识别到任何功能点，测试终止
+2025-08-15 15:06:03,514 - WebsiteTester - INFO - Initialized FunctionIdentifier with model: deepseek and PlayWrightBrowserToolkit
+2025-08-15 15:06:03,514 - WebsiteTester - INFO - PlaywrightTester 初始化 (集成LangChain工具包)
+2025-08-15 15:06:03,514 - WebsiteTester - INFO - 初始化 WebsiteTestRunner
+2025-08-15 15:06:03,514 - WebsiteTester - INFO - 🏁 开始测试网站: https://python.langchain.com/docs/integrations/tools/playwright/
+2025-08-15 15:06:03,514 - WebsiteTester - INFO - 🔍 正在识别网站功能点...
+2025-08-15 15:06:03,992 - WebsiteTester - INFO - Playwright工具包已初始化
+2025-08-15 15:06:03,992 - WebsiteTester - INFO - 开始识别功能点: https://python.langchain.com/docs/integrations/tools/playwright/
+2025-08-15 15:06:03,992 - WebsiteTester - INFO - 开始获取页面内容: https://python.langchain.com/docs/integrations/tools/playwright/
+2025-08-15 15:06:03,992 - WebsiteTester - ERROR - 获取页面内容失败: 
+2025-08-15 15:06:04,572 - httpx - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-15 15:06:39,731 - WebsiteTester - INFO - 成功识别 7 个功能点
+2025-08-15 15:06:39,731 - WebsiteTester - ERROR - 功能点识别失败: 'dict' object has no attribute 'name'
+2025-08-15 15:06:39,731 - WebsiteTester - ERROR - 未识别到任何功能点，测试终止
+2025-08-15 15:17:02,118 - WebsiteTester - INFO - Initialized FunctionIdentifier with model: deepseek and PlayWrightBrowserToolkit
+2025-08-15 15:17:02,118 - WebsiteTester - INFO - PlaywrightTester 初始化 (集成LangChain工具包)
+2025-08-15 15:17:02,118 - WebsiteTester - INFO - 初始化 WebsiteTestRunner
+2025-08-15 15:17:02,118 - WebsiteTester - INFO - 🏁 开始测试网站: https://python.langchain.com/docs/integrations/tools/playwright/
+2025-08-15 15:17:02,118 - WebsiteTester - INFO - 🔍 正在识别网站功能点...
+2025-08-15 15:17:02,118 - WebsiteTester - INFO - 开始识别功能点: https://python.langchain.com/docs/integrations/tools/playwright/
+2025-08-15 15:17:02,616 - WebsiteTester - INFO - Playwright工具包已初始化
+2025-08-15 15:17:02,616 - WebsiteTester - INFO - 开始获取页面内容: https://python.langchain.com/docs/integrations/tools/playwright/
+2025-08-15 15:17:02,616 - WebsiteTester - ERROR - 获取页面内容失败: 找不到导航工具
+2025-08-15 15:17:02,922 - httpx - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-15 15:17:35,927 - WebsiteTester - INFO - 成功识别 7 个功能点
+2025-08-15 15:17:35,928 - WebsiteTester - INFO - ✅ 识别到 7 个功能点
+2025-08-15 15:17:35,928 - WebsiteTester - INFO - 🔧 正在设置测试环境...
+2025-08-15 15:17:36,422 - WebsiteTester - ERROR - Playwright 初始化失败: Browser.new_context() got an unexpected keyword argument 'user_data_dir'
+2025-08-15 15:21:58,129 - WebsiteTester - INFO - Initialized FunctionIdentifier with model: deepseek and PlayWrightBrowserToolkit
+2025-08-15 15:21:58,129 - WebsiteTester - INFO - PlaywrightTester 初始化 (集成LangChain工具包)
+2025-08-15 15:21:58,129 - WebsiteTester - INFO - 初始化 WebsiteTestRunner
+2025-08-15 15:21:58,129 - WebsiteTester - INFO - 🏁 开始测试网站: https://python.langchain.com/docs/integrations/tools/playwright/
+2025-08-15 15:21:58,129 - WebsiteTester - INFO - 🔍 正在识别网站功能点...
+2025-08-15 15:21:58,129 - WebsiteTester - INFO - 开始识别功能点: https://python.langchain.com/docs/integrations/tools/playwright/
+2025-08-15 15:21:58,638 - WebsiteTester - INFO - Playwright工具包已初始化
+2025-08-15 15:21:58,638 - WebsiteTester - INFO - 开始获取页面内容: https://python.langchain.com/docs/integrations/tools/playwright/
+2025-08-15 15:21:58,638 - WebsiteTester - ERROR - 获取页面内容失败: BaseTool.arun() missing 1 required positional argument: 'tool_input'
+2025-08-15 15:21:59,071 - httpx - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-15 15:22:32,175 - WebsiteTester - INFO - 成功识别 7 个功能点
+2025-08-15 15:22:32,175 - WebsiteTester - INFO - ✅ 识别到 7 个功能点
+2025-08-15 15:22:32,175 - WebsiteTester - INFO - 🔧 正在设置测试环境...
+2025-08-15 15:22:32,661 - WebsiteTester - ERROR - Playwright 初始化失败: Browser.new_context() got an unexpected keyword argument 'user_data_dir'
+2025-08-15 15:38:40,247 - WebsiteTester - INFO - Initialized FunctionIdentifier with model: deepseek and PlayWrightBrowserToolkit
+2025-08-15 15:38:40,247 - WebsiteTester - INFO - PlaywrightTester 初始化 (集成LangChain工具包)
+2025-08-15 15:38:40,248 - WebsiteTester - INFO - 初始化 WebsiteTestRunner
+2025-08-15 15:38:40,248 - WebsiteTester - INFO - 🏁 开始测试网站: https://python.langchain.com/docs/integrations/tools/playwright/
+2025-08-15 15:38:40,248 - WebsiteTester - INFO - 🔍 正在识别网站功能点...
+2025-08-15 15:38:40,248 - WebsiteTester - INFO - 开始识别功能点: https://python.langchain.com/docs/integrations/tools/playwright/
+2025-08-15 15:38:40,823 - WebsiteTester - INFO - Playwright工具包已初始化
+2025-08-15 15:38:40,824 - WebsiteTester - INFO - 开始获取页面内容: https://python.langchain.com/docs/integrations/tools/playwright/
+2025-08-15 15:38:40,824 - WebsiteTester - ERROR - 获取页面内容失败: BaseTool.arun() missing 1 required positional argument: 'tool_input'
+2025-08-15 15:38:41,249 - httpx - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-15 15:39:17,827 - WebsiteTester - INFO - 成功识别 7 个功能点
+2025-08-15 15:39:17,827 - WebsiteTester - INFO - ✅ 识别到 7 个功能点
+2025-08-15 15:39:17,827 - WebsiteTester - INFO - 🔧 正在设置测试环境...
+2025-08-15 15:39:18,306 - WebsiteTester - ERROR - Playwright 初始化失败: [Errno 2] No such file or directory: 'browser_context/state.json'
+2025-08-15 15:40:36,447 - WebsiteTester - INFO - Initialized FunctionIdentifier with model: deepseek and PlayWrightBrowserToolkit
+2025-08-15 15:40:36,447 - WebsiteTester - INFO - PlaywrightTester 初始化 (集成LangChain工具包)
+2025-08-15 15:40:36,447 - WebsiteTester - INFO - 初始化 WebsiteTestRunner
+2025-08-15 15:40:36,447 - WebsiteTester - INFO - 🏁 开始测试网站: https://python.langchain.com/docs/integrations/tools/playwright/
+2025-08-15 15:40:36,447 - WebsiteTester - INFO - 🔍 正在识别网站功能点...
+2025-08-15 15:40:36,447 - WebsiteTester - INFO - 开始识别功能点: https://python.langchain.com/docs/integrations/tools/playwright/
+2025-08-15 15:40:36,988 - WebsiteTester - INFO - Playwright工具包已初始化
+2025-08-15 15:40:36,988 - WebsiteTester - INFO - 开始获取页面内容: https://python.langchain.com/docs/integrations/tools/playwright/
+2025-08-15 15:40:36,988 - WebsiteTester - ERROR - 获取页面内容失败: BaseTool.arun() missing 1 required positional argument: 'tool_input'
+2025-08-15 15:40:37,272 - httpx - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-15 15:41:14,697 - WebsiteTester - INFO - 成功识别 7 个功能点
+2025-08-15 15:41:14,697 - WebsiteTester - INFO - ✅ 识别到 7 个功能点
+2025-08-15 15:41:14,697 - WebsiteTester - INFO - 🔧 正在设置测试环境...
+2025-08-15 15:41:15,171 - WebsiteTester - ERROR - Playwright 初始化失败: [Errno 2] No such file or directory: 'browser_context/state.json'
+2025-08-15 15:42:16,274 - WebsiteTester - INFO - Initialized FunctionIdentifier with model: deepseek and PlayWrightBrowserToolkit
+2025-08-15 15:42:16,275 - WebsiteTester - INFO - PlaywrightTester 初始化 (集成LangChain工具包)
+2025-08-15 15:42:16,275 - WebsiteTester - INFO - 初始化 WebsiteTestRunner
+2025-08-15 15:42:16,275 - WebsiteTester - INFO - 🏁 开始测试网站: https://python.langchain.com/docs/integrations/tools/playwright/
+2025-08-15 15:42:16,275 - WebsiteTester - INFO - 🔍 正在识别网站功能点...
+2025-08-15 15:42:16,275 - WebsiteTester - INFO - 开始识别功能点: https://python.langchain.com/docs/integrations/tools/playwright/
+2025-08-15 15:42:16,770 - WebsiteTester - INFO - Playwright工具包已初始化
+2025-08-15 15:42:16,770 - WebsiteTester - INFO - 开始获取页面内容: https://python.langchain.com/docs/integrations/tools/playwright/
+2025-08-15 15:42:16,770 - WebsiteTester - ERROR - 获取页面内容失败: BaseTool.arun() missing 1 required positional argument: 'tool_input'
+2025-08-15 15:42:17,111 - httpx - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-15 15:42:54,143 - WebsiteTester - INFO - 成功识别 7 个功能点
+2025-08-15 15:42:54,143 - WebsiteTester - INFO - ✅ 识别到 7 个功能点
+2025-08-15 15:42:54,143 - WebsiteTester - INFO - 🔧 正在设置测试环境...
+2025-08-15 15:42:54,705 - WebsiteTester - ERROR - Playwright 初始化失败: [Errno 2] No such file or directory: '/home/fiona/projects/langchain-study/browser_context/browser_context/state.json'
+2025-08-15 15:45:39,226 - WebsiteTester - INFO - Initialized FunctionIdentifier with model: deepseek and PlayWrightBrowserToolkit
+2025-08-15 15:45:39,226 - WebsiteTester - INFO - PlaywrightTester 初始化 (集成LangChain工具包)
+2025-08-15 15:45:39,226 - WebsiteTester - INFO - 初始化 WebsiteTestRunner
+2025-08-15 15:45:39,227 - WebsiteTester - INFO - 🏁 开始测试网站: https://python.langchain.com/docs/integrations/tools/playwright/
+2025-08-15 15:45:39,227 - WebsiteTester - INFO - 🔍 正在识别网站功能点...
+2025-08-15 15:45:39,227 - WebsiteTester - INFO - 开始识别功能点: https://python.langchain.com/docs/integrations/tools/playwright/
+2025-08-15 15:45:39,985 - WebsiteTester - INFO - Playwright工具包已初始化
+2025-08-15 15:45:39,985 - WebsiteTester - INFO - 开始获取页面内容: https://python.langchain.com/docs/integrations/tools/playwright/
+2025-08-15 15:45:39,986 - WebsiteTester - ERROR - 获取页面内容失败: BaseTool.arun() missing 1 required positional argument: 'tool_input'
+2025-08-15 15:45:40,587 - httpx - INFO - HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-15 15:46:20,942 - WebsiteTester - INFO - 成功识别 8 个功能点
+2025-08-15 15:46:20,942 - WebsiteTester - INFO - ✅ 识别到 8 个功能点
+2025-08-15 15:46:20,943 - WebsiteTester - INFO - 🔧 正在设置测试环境...
+2025-08-15 15:46:21,423 - WebsiteTester - ERROR - Playwright 初始化失败: [Errno 2] No such file or directory: '/home/fiona/projects/langchain-study/browser_context/browser_context/state.json'
